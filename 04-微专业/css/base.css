@@ -1,0 +1,665 @@
+@charset "UTF-8";
+/*css 初始化 */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+    margin: 0;
+    padding: 0;
+}
+
+fieldset, img, input, button {
+    /*fieldset组合表单中的相关元素*/
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+}
+
+ul, ol {
+    list-style: none; /*清除列表风格*/
+}
+
+input {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-family: "SimSun", "宋体";
+}
+
+select, input {
+    vertical-align: middle;
+}
+
+select, input, textarea {
+    font-size: 12px;
+    margin: 0;
+}
+
+textarea {
+    resize: none;
+}
+
+/*防止多行文本框拖动*/
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+/*  去掉图片低测默认的3像素空白缝隙*/
+table {
+    border-collapse: collapse; /*合并外边线*/
+}
+
+body {
+    font: 12px/150% Arial, Verdana, "\5b8b\4f53"; /*宋体，Unicode，统一码*/
+    color: #666;
+    background: #fff
+}
+
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1; /*IE/7/6*/
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #4fff10;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 100%;
+}
+
+s, i, em {
+    font-style: normal;
+    text-decoration: none;
+}
+
+.col-red {
+    color: #6ac81f !important;
+}
+
+/*公共类*/
+.w {
+    /*版心 提取 */
+    width: 1210px;
+    margin: 0 auto;
+}
+
+.fl {
+    float: left
+}
+
+.fr {
+    float: right
+}
+
+.al {
+    text-align: left
+}
+
+.ac {
+    text-align: center
+}
+
+.ar {
+    text-align: right
+}
+
+.hide {
+    display: none
+}
+
+/*site-nav部分start*/
+.site-nav {
+    width: 100%;
+    height: 60px;
+    background-color: #2D323D;
+    position: fixed;
+    z-index: 1;
+}
+
+.site-nav-logo {
+    width: 230px;
+    height: 60px;
+    float: left;
+    text-indent: -20000em;
+    background: url("../images/nav-left-logo.png");
+    cursor: pointer;
+}
+
+.site-nav-logo-r {
+    height: 60px;
+    float: left;
+}
+
+.site-nav-logo-r ul li {
+    float: left;
+    position: relative;
+}
+
+.site-nav-logo-r li ul {
+    position: absolute;
+    top: 60px;
+    right: -12px;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.4);
+    display: none;
+}
+
+.site-nav-logo-r .a {
+    width: 110px;
+    height: 40px;
+    text-align: center;
+    font: 600 16px/40px "SimSun";
+    padding: 2px 5px;
+
+    /*display: none;*/
+}
+
+.site-nav-logo-r a {
+    display: block;
+    height: 60px;
+    padding: 0 15px;
+    font: 600 16px/60px "SimSun";
+}
+
+.site-nav-logo-r .b {
+    width: 350px;
+    height: 176px;
+    position: absolute;
+    top: 60px;
+    right: -120px;
+    z-index: 1;
+    cursor: pointer;
+    display: none;
+}
+
+.site-nav-logo-r a:hover {
+    color: black;
+    background-color: #4fff10;
+}
+
+.site-nav-search {
+    line-height: 60px;
+}
+
+.site-nav-search button {
+    padding: 8px;
+    cursor: pointer;
+    background-color: #FF9600;
+    color: white;
+}
+
+.site-nav-search input {
+    width: 155px;
+    height: 30px;
+    color: #070618;
+    padding-left: 5px;
+    margin-right: 20px;
+    line-height: 60px;
+    font: 600 16px/60px "SimSun";
+    background-color: #5C5F68;
+}
+
+/*site-nav部分end*/
+
+/*topbanner部分end*/
+
+#topbanner-all {
+    width: 1194px;
+    height: 500px;
+    padding: 7px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    position: relative;
+    top: 68px;
+}
+
+.topbanner-all-screen {
+    width: 1194px;
+    height: 500px;
+    position: relative;
+    float: left;
+    overflow: hidden;
+}
+
+.topbanner-all-screen ul {
+    width: 10000px;
+    height: 500px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.topbanner-all-screen li {
+    width: 1194px;
+    height: 500px;
+    float: left;
+    list-style: none;
+    overflow: hidden;
+}
+.topbanner-all-screen li img {
+    width: 1194px;
+    height: 500px;
+    float: left;
+    list-style: none;
+    overflow: hidden;
+}
+.topbanner-all ol {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.topbanner-all ol li {
+    float: left;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    margin-left: 10px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+}
+
+.topbanner-all ol li.current {
+    background: darkorange;
+    color: #fff;
+}
+
+#arr span {
+    width: 40px;
+    height: 60px;
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    margin-top: -30px;
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    cursor: pointer;
+    font-family: "黑体";
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 60px;
+}
+
+#arr span:hover {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+#arr #right {
+    right: 5px;
+    left: auto;
+}
+
+
+.topbanner-logo a {
+    width: 150px;
+    height: 35px;
+    text-indent: -20000em;
+    background: url("../images/microicon.png");
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    margin-left: -85px;
+    cursor: pointer;
+}
+
+.topbanner-logo h2 {
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    position: absolute;
+    top: 280px;
+    left: 40%;
+    margin-left: -144px;
+}
+
+.topbanner-logo h2 p {
+    padding: 10px;
+    color: red;
+}
+
+.topbanner .topbanner-search a {
+    position: absolute;
+    top: 380px;
+    left: 50%;
+    width: 220px;
+    height: 45px;
+    margin-left: -110px;
+    background-color: #4fff10;
+    color: white;
+    text-align: center;
+    font: 400 24px/45px "consolas";
+    border-radius: 100px;
+}
+
+.topbanner-search a:hover {
+    color: black;
+    background-color: green;
+}
+
+.topbanner .topbanner-search i {
+    padding-left: 10px;
+    font-family: "consolas";
+    font-size: 25px;
+}
+
+/*topbanner部分end*/
+
+/*nav部分start*/
+.nav {
+    margin-top: 75px;
+    height: 550px;
+    background-color: #F0F0F0;
+}
+
+.nav-left {
+    width: 345px;
+    height: 140px;
+    float: left;
+    background-color: #1D91D4;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.nav-left-top {
+    height: 61px;
+    width: 345px;
+    border-bottom: 1px solid white;
+}
+
+.nav-left img {
+    float: left;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 20px 10px 16px 19px;
+}
+
+.nav-left p {
+    float: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font: 800 16px/25px "consolas";
+    color: white;
+    margin: 20px 130px 16px 19px;
+}
+
+.nav-left a {
+    float: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px 15px 16px 19px;
+    font: 400 14px/25px "consolas";
+}
+
+.nav-left .nav-left-bottom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 345px;
+    height: 78px;
+    margin-top: 62px;
+}
+
+.nav-left .nav-left-bottom h3 {
+    color: white;
+    font-size: 14px;
+    padding-top: 20px;
+
+}
+
+.site-right ul {
+    width: 820px;
+}
+
+.site-right img {
+    float: right;
+    padding: 0 5px 10px 5px;
+}
+
+/*nav部分end*/
+
+/*teacher部分start*/
+.teacher {
+    width: 100%;
+    height: 168px;
+    margin-top: 0;
+}
+
+.teacher-p {
+    padding: 70px auto;
+    position: relative;
+}
+
+.teacher-p p {
+    text-align: center;
+    font: 800 30px/168px "simsun";
+    padding: 0 5px;
+}
+
+.teacher-border-b {
+    width: 240px;
+    height: 84px;
+    position: absolute;
+    top: 0;
+    left: 15%;
+    border-bottom: 1px solid black;
+}
+
+.teacher-border-bb {
+    width: 240px;
+    height: 84px;
+    position: absolute;
+    top: 0;
+    right: 15%;
+    border-bottom: 1px solid black;
+}
+
+.teachers-resume {
+    width: 298px;
+    height: 340px;
+    float: left;
+    /*background-color: red;*/
+    border-bottom: 1px solid #ECEFF0;
+    position: relative;
+}
+.teachers-resume-div{
+    width: 115px;
+    height: 115px;
+    position: relative;
+    top: 15px;
+    left: 80px;
+    border: 0;
+
+    border-radius: 115px ;
+    overflow: hidden;
+}
+.teachers-resume-div .img1 {
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    top: -13px;
+    left: -12px;
+    border-radius: 140px;
+
+}
+
+.teachers-resume h2 {
+    display: block;
+    margin-top: 40px;
+    text-align: center;
+    color: #333D42;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.teachers-resume span {
+    text-align: center;
+    color: #859295;
+    font-size: 14px;
+
+}
+
+.teachers-resume .img2 {
+    position: absolute;
+    bottom: 38px;
+    left: 56px;
+}
+
+/*teacher部分end*/
+
+/*work部分start*/
+.work {
+    height: 350px;
+    background-color: #FF9600;
+}
+
+.work-top {
+    padding: 70px auto;
+    position: relative;
+}
+
+.work-top p {
+    text-align: center;
+    font: 800 30px/168px "simsun";
+    padding: 0 5px;
+    color: white;
+}
+
+.work-top-A {
+    width: 240px;
+    height: 84px;
+    position: absolute;
+    top: 0;
+    left: 15%;
+    border-bottom: 1px solid white;
+}
+
+.work-top-B {
+    width: 240px;
+    height: 84px;
+    position: absolute;
+    top: 0;
+    right: 15%;
+    border-bottom: 1px solid white;
+}
+
+.work-top {
+    height: 180px;
+}
+
+.work-bottom-logo {
+    margin: 0 auto;
+}
+
+.work-bottom-logo ul {
+    width: 1210px;
+}
+
+.work-bottom-logo li {
+    width: 160px;
+    height: 170px;
+    float: left;
+    border-top: 0;
+    border-left: 0;
+}
+
+.work-bottom-logo li:hover {
+    background-color: white;
+}
+
+.work-bottom-logo a {
+    display: block;
+    position: relative;
+    width: 160px;
+    height: 90px;
+    padding-top: 80px;
+    text-align: center;
+    line-height: 114px;
+    color: white;
+    font-size: 24px;
+}
+
+.work-bottom-logo a:hover {
+    color: #1D91D4;
+}
+
+.work-bottom-logo i {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 30px;
+    left: 50px;
+    background: url("../images/tubiao.fw.png") no-repeat;
+}
+
+.work-bottom-logo .tubiao2 {
+    background-position: -139px 0;
+}
+
+.work-bottom-logo .tubiao3 {
+    background-position: 0 -124px;
+}
+
+.work-bottom-logo .tubiao4 {
+    background-position: -139px -126px;
+}
+
+.work-bottom-logo .tubiao5 {
+    background-position: 0 -234px;
+}
+
+.work-bottom-logo .tubiao6 {
+    background-position: -139px -250px;
+}
+
+/*work部分end*/
+
+/*footer部分start*/
+.footer {
+    height: 80px;
+    background-color: #F6F6F6;
+}
+
+/*footer部分end*/
+
+/*侧边广告栏start*/
+
+#sitebar-left {
+    position: absolute;
+    top: 300px;
+    left: 5px;
+}
+
+#sitebar-right {
+    width: 40px;
+    height: 40px;
+    display:none;
+    border-radius: 40px;
+    background-color: red;
+    position: fixed;
+    bottom: 100px;
+    right: 40px;
+    cursor: pointer
+}
+
+/*侧边广告栏end*/

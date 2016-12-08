@@ -1,0 +1,335 @@
+
+.all {
+    width: 1366px;
+    background-color: #fff;
+    border-top: 2px solid #fff;
+    margin: 0 auto;
+}
+.all .top{
+    position: relative;
+    width: 1205px;
+    height: 86px;
+    margin:0 auto ;
+    padding-left: 4px;
+
+}
+.top .top-left{
+    width: 206px;
+    height: 58px;
+    float: left;
+    margin: 12px 12px 28px 0px;
+    background: url("../qiyebanimages/logo.png") no-repeat;
+    cursor: pointer;
+}
+.top-left-qiye{
+    width: 60px;
+    height: 19px;
+    font-size: 19px;
+    color: #A9B1B3;
+    margin-top: 38px;
+    float: left;
+}
+.top-right{
+    font-size: 12px;
+    height: 12px;
+    color: #A9B1B3;
+    margin-top: 36px;
+    cursor: pointer;
+}
+.top-right-show{
+    height: 45px;
+    width: 150px;
+    font-size: 20px;
+    line-height: 45px;
+    color: #A9B1B3;
+    background-color: black;
+    opacity: 0;
+    margin-top: 36px;
+    cursor: pointer;
+    position: absolute;
+    top: -10px;
+    right: 200px;
+    border-radius: 10px;
+
+   /*display:none;*/
+}
+.free #free-a{
+    opacity:1;
+}
+.free{
+    position: relative;
+    width: 1366px;
+    height: 460px;
+    background: url("../qiyebanimages/banner.jpg");
+    opacity: 1;
+    margin: 0 auto;
+    text-align: center;
+    color: #FFFFFF;
+}
+.free .free-easy{
+    height: 46px;
+    font-size: 46px;
+    padding-top: 104px;
+    padding-bottom: 38px;
+}
+.free .free-cost{
+    height: 14px;
+    font-size: 14px;
+    padding-bottom: 72PX;
+}
+.free #free-a,.foot-a{
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    width: 220px;
+    height: 60px;
+    font-size: 30px;
+    line-height: 60px;
+    background-color:#49AF4F;
+    border-radius: 30px;
+    cursor: pointer;
+
+}
+.allthree{
+    height: 251px;
+    background-color: #EEF3F4;
+    padding-top: 38px;
+    overflow: hidden;
+}
+.allthree .hui{
+    height: 251px;
+    width: 1400px;
+    padding-left: 25px;
+}
+.allthree .safe4{
+    margin-right: 0px;
+}
+.allthree .safe{
+    width: 182px;
+    height: 164px;
+    margin-right: 159px;
+
+}
+.allthree .safe .picture2{
+    width: 66px;
+    cursor: pointer;
+    height: 55px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+.allthree .safe .picture{
+    cursor: pointer;
+    width: 81px;
+    height: 55px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    overflow: hidden;
+
+}
+.allthree .safe .picture1{
+    background: url("../qiyebanimages/introduceicon.png") no-repeat 0 -200px;
+}
+.allthree .safe .picture2{
+
+    background: url("../qiyebanimages/introduceicon.png") no-repeat 0 -258px;
+}
+.allthree .safe .picture3{
+    background: url("../qiyebanimages/introduceicon.png") no-repeat -70px -258px;
+}
+.allthree .safe .picture4{
+    background: url("../qiyebanimages/introduceicon.png") no-repeat -85px -200px;
+}
+.self,.self2,.self3,.self4{
+    cursor: pointer;
+    font-size: 17px;
+    margin-bottom:12px;
+}
+.allthree .safe .close,.close2,.close3,.close4{
+    /*margin-top:50px;*/
+    cursor: pointer;
+    line-height: 20px;
+    font-size: 13px;
+    display: none;
+}
+.alljx{
+    padding-top: 74px;
+    height: 138px;
+    text-align: center;
+}
+.alljx .alljx-top{
+    font-size: 30px;
+    margin-bottom: 22px;
+    color: #333333;
+}
+.alljx .alljx-next{
+    font-size: 15px;
+    line-height: 24px;
+    color: #343D42;
+}
+.allpicture{
+    position: relative;
+}
+.allpicture .leader{
+    width: 300px;
+    height: 170px;
+    background-color: dodgerblue;
+    margin-right: 2px;
+}
+.allpicture .leader1{
+    background: url("../qiyebanimages/hr1.jpg") no-repeat;
+    cursor: pointer;
+}
+.allpicture .leader2{
+    background: url("../qiyebanimages/self.jpg") no-repeat;
+    cursor: pointer;
+}
+.allpicture .sell{
+    width: 300px;
+    height: 341px;
+    float: left;
+    background: url("../qiyebanimages/sale.jpg") no-repeat;
+    margin-right: 2px;
+    cursor: pointer;
+}
+.allpicture .zhan-f{
+    position: absolute;
+    top: 172px;
+    width: 602px;
+    height: 169px;
+    background: url("../qiyebanimages/strategy.jpg") no-repeat;
+    cursor: pointer;
+}
+.allpicture .renli {
+    position: absolute;
+    top: 0;
+    right: -3px;
+    background: url("../qiyebanimages/hr2.jpg");
+    cursor: pointer;
+}
+.allpicture .caiwu{
+    position: absolute;
+    height: 169px;
+    top: 172px;
+    right: -3px;
+    background: url("../qiyebanimages/account.jpg");
+    cursor: pointer;
+}
+.allpicture .zhuanye{
+    width: 601px;
+    height: 170px;
+    background: url("../qiyebanimages/profession.jpg");
+    cursor: pointer;
+    margin-top: 2px;
+}
+.yunying{
+    margin-top: 2px;
+    background: url("../qiyebanimages/operations.jpg");
+    cursor: pointer;
+}
+.goutong{
+    margin-top: 2px;
+    background: url("../qiyebanimages/communication.jpg");
+    cursor: pointer;
+}
+.tong{
+    height: 580px;
+    background-color: #EEF3F4;
+    text-align: center;
+}
+.tong .him{
+    padding-top: 98px;
+    font-size: 28px;
+    margin-bottom: 55px;
+}
+.tong-margin{
+    margin-right: 24px;
+}
+.tong .tong-p{
+    width: 280px;
+    height: 182px;
+    float: left;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+.tong .tong-p1{
+    background: url("../qiyebanimages/air.jpg");
+}
+.tong .tong-p2{
+    background: url("../qiyebanimages/manc.jpg");
+}
+.tong .tong-p3{
+    background: url("../qiyebanimages/information.jpg");
+}
+.tong .tong-p4{
+    background: url("../qiyebanimages/business.jpg");
+}
+.w-jishu{
+    height: 45px;
+    float: left;
+    background-color: #49AF4F;
+    cursor: pointer;
+}
+.w-jishu1{
+    width: 112px;
+    margin-right: 44px;
+    background: url("../qiyebanimages/introduceicon.png") no-repeat -105px -110px;
+    /*background-color: #2A6DB3;*/
+}
+.w-jishu2{
+    width: 146px;
+    margin-right: 44px;
+    background: url("../qiyebanimages/introduceicon.png") no-repeat -235px -110px;
+}.w-jishu3{
+    width: 166px;
+     margin-right: 44px;
+    background: url("../qiyebanimages/introduceicon.png") no-repeat 0px -52px;
+}.w-jishu4{
+    width: 164px;
+      margin-right: 44px;
+    background: url("../qiyebanimages/introduceicon.png") no-repeat -235px -52px;
+}.w-jishu5{
+    width: 228px;
+       margin-right: 44px;
+    background: url("../qiyebanimages/introduceicon.png") no-repeat 0px 0px;
+}.w-jishu6{
+    width: 164px;
+    background: url("../qiyebanimages/introduceicon.png") no-repeat -235px 0px;
+}
+ .foot{
+     width: 1366px;
+     background-color: #2A6DB3;
+     margin:0 auto;
+ }
+
+ .foot-foot{
+     margin:0 auto;
+     width: 1205px;
+     height: 350px;
+
+     /*opacity: 0.8;*/
+     text-align: center;
+     padding-top: 50px;
+ }
+.foot-foot .foot-begin{
+    font-size: 30px;
+    font-weight:bold;
+    color: white;
+    margin-bottom: 30px;
+}
+.foot-a{
+    margin-bottom: 62px;
+}
+
+.foot-company{
+    height: 88px;
+    border-top: 1px solid white;
+    padding-top: 46px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 20px;
+    color: #fff;
+}
+.foot-copyright{
+    color: white;
+}

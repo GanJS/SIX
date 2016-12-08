@@ -1,0 +1,500 @@
+    
+    .t{
+        font-size: 30px !important;
+    }
+    .teacher {
+        height: 1537px;
+        background-color: #43BEE8;
+        clear: both;
+        overflow: hidden;
+    }
+    .top-net {
+        height: 225px;
+        color: #fff;
+        text-align: center;
+        padding-top: 115px;
+    }
+    .top-net .t {
+        height: 64px;
+        font: 600 italic 32px "microsoft yahei";
+    }
+    .top-net .c {
+        height: 84px;
+        font: 800 normal 54px "microsoft yahei";
+    }
+    .top-net .b {
+        font: 400 normal 16px "microsoft yahei";
+    }
+    .top-goods {
+        height: 553px;
+        background-color: #fff;
+    }
+    .top-goods .t{
+        height: 80px;
+        background-color: #FFD151;
+        font: 400 normal 16px/80px "microsoft yahei";
+        text-align: center;
+        color: #fff;
+    }
+    .top-goods .t .t-l {
+        width: 239px;
+        height: 80px;
+        /*background: url("../picture/lj.png") no-repeat;*/
+        background-color: #FBBE35;
+        border-radius: 0 40px 40px 0;
+    }
+    .top-goods .t .t-c {
+        width: 787px;
+        height: 80px;
+        /*background: url("../picture/cj.png") no-repeat;*/
+        background-color: #FFD151;
+    }
+    .top-goods .t .t-r {
+        width: 179px;
+        height: 80px;
+        /*background: url("../picture/rj.png") no-repeat;*/
+        background-color: #F6AC1B;
+        border-radius: 40px 0 0 40px;
+    
+    }
+    .top-goods .c {
+        height: 365px;
+        border-bottom: 1px solid #FBE1B2;
+    }
+    .top-goods .c .c-l {
+        width: 209px;
+        height: 328px;
+        border-right: 1px solid #FBE1B2;
+        padding-top: 37px;
+        text-align: center;
+    }
+    .top-goods .c .c-l p,.top-goods .c .c-r p {
+        height: 35px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+    .top-goods .c .c-l .ellipses,.top-goods .c .c-r .ellipses{
+        width: 148px;
+        height: 28px;
+        margin-bottom: 22px;
+        margin-left: 34px;
+        border: 1px solid #FFB900;
+        border-radius: 14px;
+        line-height: 28px;
+        font-size: 12px;
+        cursor: pointer;
+    }
+    .top-goods .c .c-l .ellipsed,.top-goods .c .c-r .ellipsed{
+        width: 148px;
+        height: 28px;
+        margin-bottom: 22px;
+        margin-left: 34px;
+        border: 1px dashed #D2D2D2;
+        border-radius: 14px;
+        line-height: 28px;
+        font-size: 12px;
+        cursor: pointer;
+    }
+    
+    .top-goods .c .c-c {
+        width: 787px;
+        height: 328px;
+        border-right: 1px solid #FBE1B2;
+        padding-top: 37px;
+    
+    }
+    .top-goods .c .c-c .c-c-l {
+        width: 713px;
+        height: 328px;
+        padding-left: 20px;
+    }
+    .top-goods .c .c-c .c-c-l p {
+        height: 34px;
+        clear: both;
+        cursor: pointer;
+    }
+    .top-goods .c .c-c .c-c-l .ellipses{
+        width: 148px;
+        height: 28px;
+        border: 1px solid #FFB900;
+        text-align: center;
+        line-height: 28px;
+        margin:0 12px 22px 0;
+        border-radius: 14px;
+        font-size: 12px;
+        cursor: pointer;
+    }
+    .top-goods .c .c-c .c-c-l .ellipsed {
+        width: 148px;
+        height: 28px;
+        border: 1px dashed #D2D2D2;
+        text-align: center;
+        line-height: 28px;
+        margin:0 12px 22px 0;
+        border-radius: 14px;
+        font-size: 12px;
+        cursor: pointer;
+    }
+    .top-goods .c .c-c .c-c-r {
+        width: 28px;
+        height: 199px;
+        text-align: center;
+        border: 1px dashed #D2D2D2;
+        margin: 12px 22px 0 0;
+        padding-top: 85px;
+        border-radius: 14px;
+        line-height: 1.5em;
+        font: 400 normal 16px/100% "microsoft yahei";
+        color: #FFB900;
+    }
+    .top-goods .c .c-r {
+        text-align: center;
+        height: 328px;
+        padding-top: 37px;
+    }
+    .top-goods .b div {
+        width: 636px;
+        height: 38px;
+        border: 1px solid #FFB900;
+        margin: 22px auto 0;
+        border-radius: 20px;
+        text-align: center;
+        line-height: 38px;
+    }
+    /*部分专家 B*/
+    
+    .top-teachermess h2{
+        text-align: center;
+        font-size: 24px;
+        color: #fff;
+        margin: 100px 0 40px 0;
+    }
+    .top-teachermess .teacher {
+        width: 100%;
+        height: 348px;
+        padding: 0 60px;
+        position: relative;
+        cursor: pointer;
+    }
+    .top-teachermess .teacher .sanjiao {
+        height: 60px;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        margin-top: -30px;
+        font: 600 normal 60px/60px "consolas";
+        text-align: center;
+        color: #fff;
+        opacity: 0.3;
+        display: none;
+    }
+    .sanjiao .left{
+        width: 60px;
+        height: 60px;
+        display: block;
+        float: left;
+    }
+    .sanjiao .right{
+        width: 60px;
+        height: 60px;
+        display: block;
+        float: right;
+    }
+    .teacher ul {
+        width: 310%;
+    }
+    .teacher li {
+        width: 320px;
+        height: 347px;
+        padding: 0 20px;
+        float: left;
+        margin: 0 20px;
+        text-align: center;
+        color: #fff;
+    }
+    .teacher li h3 {
+        font-size: 28px;
+        margin-top: 20px;
+    }
+    .teacher li h4 {
+        font-size: 17px;
+        margin-top: 20px;
+    }
+    .teacher li p{
+        line-height: 20px;
+        text-align: left;
+        margin-top: 20px;
+        padding: 0 25px;
+    }
+    .teacher .iimg {
+        width: 120px;
+        height: 120px;
+        border-radius: 60px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    /*.teacher .timg1 {*/
+        /*/!*background: url("../images/teacher1.jpg") no-repeat -50px 0;*!/*/
+    /*}*/
+    /*.teacher .timg2 {*/
+        /*/!*background: url("../images/teacher2.jpg") no-repeat;*!/*/
+    /*}*/
+    /*.teacher .timg3 {*/
+        /*/!*background: url("../images/teacher3.jpg") no-repeat ;*!/*/
+    /*}*/
+    /*.teacher .timg4 {*/
+        /*/!*background: url("../images/teacher4.jpg") no-repeat;*!/*/
+    /*}*/
+    /*.teacher .timg5 {*/
+        /*/!*background: url("../images/teacher5.jpg") no-repeat;*!/*/
+    /*}*/
+    /*.teacher .timg6 {*/
+        /*/!*background: url("../images/teacher6.jpg") no-repeat;*!/*/
+    /*}*/
+    
+    
+    /*部分专家 E*/
+    
+    
+    
+    /*--teacher  E--*/
+    
+    /*导航栏*/
+    .header {
+        height: 60px;
+        background: url(../images/bg_nav_rep.png) repeat;
+        /*background-color: #2F3441;*/
+    }
+    .header-nav {
+        width: 1205px;
+        margin: 0 auto;
+    }
+    
+    
+    /*logo部分*/
+    .header-nav .logo {
+        float: left;
+        margin-top: 14px;
+        width: 241px;
+        overflow: hidden;
+    }
+    .logo a {
+        display: block;
+        height: 35px;
+        width: 153px;
+        background: url(../images/logo3.png) no-repeat;
+        text-indent: -9999px;
+    }
+    
+    
+    /*导航栏a链接*/
+    .nav-find{
+        position: relative;
+        float: left;
+        line-height: 26px;
+        height: 60px;
+    }
+    
+    .header-nav .item {
+        float: left;
+        padding: 0 15px;
+        text-decoration: none;
+        font: 400 15px/60px "simsun";
+        color: #eee;
+    }
+    .header-nav .appitem{
+        position: relative;
+        width: 83px;
+        height: 60px;
+        float: left;
+        /*overflow: hidden;*/
+    }
+    .appitem .border-sup{
+        position: absolute;
+        left: 30px;
+        bottom: 0;
+        width: 0;
+        height: 0;
+        border: 10px solid #2E333F;
+        border-top-width: 10px;
+        border-bottom-color: #fff;
+        border-bottom-width: 10px;
+        display: none;
+    }
+    .appitem .imgcode{
+        width: 310px;
+        height: 140px;
+        background-color: #fff;
+        position: absolute;
+        border: 1px solid #ddd;
+        top: 100%;
+        left: -125px;
+        padding: 20px;
+        display: none;
+    }
+    .imgcode .code-top{
+        position: absolute;
+        width: 150px;
+        height: 44px;
+        margin-top: 10px;
+        /*margin-left: 20px;*/
+        background: url("../images/ui_new_yktnav_sprite.png");
+        background-position: 0 -28px;
+    }
+    .imgcode .code-bottom{
+        position: absolute;
+        width: 150px;
+        height: 44px;
+        margin-top: 60px;
+        /*margin-left: 20px;*/
+        background: url("../images/ui_new_yktnav_sprite.png");
+        background-position: 0 -76px;
+    }
+    .appitem .imgcode img{
+        float: left;
+    }
+    .appitem .imgcode h4{
+        line-height: 28px;
+        font-size: 17px;
+        color: #666;
+    }
+    
+    /*搜索框*/
+    .search {
+        float: right;
+        width: 259px;
+    }
+    .search .inp {
+        float: left;
+        margin-top: 16px;
+        width: 156px;
+        height: 26px;
+        background-color: #5C5F68;
+        /*background: url(images/ui_sprite.png) no-repeat 53px -565px;*/
+    }
+    .inp .glass {
+        float: left;
+        width: 30px;
+        height: 26px;
+        background: url(../images/ui_sprite.png) no-repeat -47px -559px;
+    }
+    .search input {
+        height: 26px;
+        color: #747D85;
+        background-color: #5C5F68;
+    }
+    
+    
+    /*button*/
+    .search button {
+        float: left;
+        margin-left: 23px;
+        margin-top: 15px;
+        width: 80px;
+        height: 30px;
+        color: #fff;
+        background-color: #FF9600;
+        cursor: pointer;
+    }
+    
+    
+    
+    /*fotter*/
+    .footer {
+        /*height: 297px;*/
+        background-color: #474443;
+    }
+    /*footer左边部分*/
+    .ft-left {
+        float: left;
+        width: 430px;
+        padding: 50px 0 35px;
+    
+    }
+    .ft-logo {
+        width: 430px;
+        height: 46px;
+        background: url(../images/logofoot.png) no-repeat left;
+    }
+    .ft-left>p {
+        margin: 20px 0 40px;
+        color: #ddd;
+        font: 400 12px/22px "sinsun";
+    }
+    .ft-left .share {
+        height: 22px;
+    }
+    .ft-left .share p {
+        float: left;
+        color: #ddd;
+        font: 400 12px/22px "sinsun";
+    }
+    .ft-left .share a {
+        float: left;
+        height: 16px;
+        width: 16px;
+        margin: 3px 4px;
+    }
+    .ft-left .share .sharelink1 {
+        background: url(../images/sharelinkui.png) no-repeat;
+        background-position: -35px -53px;
+    }
+    .ft-left .share .sharelink2 {
+        background: url(../images/sharelinkui.png) no-repeat;
+        background-position: -35px -73px;
+    }
+    .ft-left .share .sharelink3 {
+        background: url(../images/sharelinkui.png) no-repeat;
+        background-position: -8px -73px;
+    }
+    .ft-left .share .sharelink4 {
+        background: url(../images/sharelinkui.png) no-repeat;
+        background-position: -8px -53px;
+    }
+    .ft-left .copy {
+        color: #999999;
+        margin-top: 20px;
+    }
+    
+    /*footer右边部分*/
+    .ft-right {
+        float: right;
+        padding-top: 119px;
+        color: #fff;
+        width: 509px;
+    }
+    .ft-right a {
+        color: #ddd;
+        padding: 0 8px;
+    }
+    .ft-right .appdown {
+        margin-top: 15px;
+        float: right;
+        width: 296px;
+    }
+    .ft-right span {
+        color: #ddd;
+        float: left;
+        margin: 4px 0;
+    }
+    .ft-right .appstore {
+        float: left;
+        padding: 0;
+        margin-left: 9px;
+        width: 110px;
+        height: 32px;
+        background: url(../images/download_icon.png) no-repeat;
+        background-position: 0 0;
+    }
+    .ft-right .android {
+        float: left;
+        padding: 0;
+        margin-left: 9px;
+        width: 110px;
+        height: 32px;
+        background: url(../images/download_icon.png) no-repeat;
+        background-position: 0 -42px;
+    }
+    
+    

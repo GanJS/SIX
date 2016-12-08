@@ -1,0 +1,228 @@
+    <!DOCTYPE html>
+    <html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <title></title>
+        <link rel="stylesheet" href="css/index.css"/>
+        <link rel="stylesheet" href="css/common.css"/>
+        <script src="js/jquery-1.11.1.min.js"></script>
+        <script src="js/index.js"></script>
+        <link rel="shortcut icon" href="images/favicon.ico"/>
+    </head>
+    <body>
+    <div class="header">
+        <div class="header-nav">
+            <div class="logo">
+                <a href="#" class="logo-4">
+                    网易云课堂
+                </a>
+            </div>
+            <div class="nav-find">
+                <a href="../00-网易云主页/main.html" class="item">首页</a>
+                <a href="../01-全部课程/courses.html" class="item">全部课程</a>
+                <a href="../04-微专业/index.html" class="item">微专业</a>
+                <div class="appitem">
+                    <a href="#" class="item downloadApp">下载APP</a>
+                    <div class="border-sup"></div>
+                    <div class="imgcode">
+                        <img src="images/nav_qrcode.png"/>
+                        <h4 class="txt">扫码下载官方App</h4>
+                        <a href="#" class="code-top"></a>
+                        <a href="#" class="code-bottom"></a>
+                    </div>
+                </div>
+                <a href="#" class="item">我的学习</a>
+            </div>
+            <div class="search">
+                <div class="inp">
+                    <div class="glass"></div>
+                    <input type="text" value="搜索"/>
+                </div>
+                <button>登录/注册</button>
+                <!--<button>登录/注册</button>-->
+            </div>
+        </div>
+    </div>
+
+    <!--teacher  B-->
+    <div class="teacher">
+        <div class="w top">
+            <div class="top-net">
+                <p class="t">“互联网+”时代的新机遇</p>
+                <p class="c">热门互联网课程职业技能培训体系</p>
+                <p class="b">网易云课堂联合行业内各领域知名专家和机构精心打造、内容全面、专业。是互联网人最佳的提升学习方案。</p>
+            </div>
+            <div class="top-goods">
+                <div class="t">
+                    <div class="t-l fl">产品设计</div>
+                    <div class="t-c fl">技术开发</div>
+                    <div class="t-r fl">运营推广</div>
+                </div>
+                <div class="c">
+                    <div class="c-l fl">
+                        <p>产品规划与管理</p>
+                        <div class="ellipses">产品经理</div>
+                        <p>用户研究与体验设计</p>
+                        <div class="ellipses">交互设计师</div>
+                        <div class="ellipses">UI设计师</div>
+                        <div class="ellipsed">用户研究工程师</div>
+
+                    </div>
+                    <div class="c-c fl">
+                        <div class="c-c-l fl">
+                            <p>Web前端开发、移动端开发</p>
+                            <div>
+                                <div class="ellipses fl">前端开发工程师</div>
+                                <div class="ellipses fl">ios开发工程师</div>
+                                <div class="ellipses fl">Android开发工程师</div>
+                            </div>
+                            <p>后端开发</p>
+                            <div>
+                                <div class="ellipses fl">Java开发工程师</div>
+                                <div class="ellipses fl">C/C++开发工程师</div>
+                                <div class="ellipsed fl">NET开发工程师</div>
+                                <div class="ellipsed fl">Python开发工程师</div>
+                            </div>
+                            <div>
+                                <div class="ellipsed fl">PHP开发工程师</div>
+                                <div class="ellipses fl">大数据开发工程师</div>
+                            </div>
+                            <p>技术支撑</p>
+                            <div>
+                                <div class="ellipses fl">自动化测试工程师</div>
+                                <div class="ellipses fl">移动应用测试工程师</div>
+                                <div class="ellipses fl">数据库管理工程师</div>
+                                <div class="ellipsed fl">运维工程师</div>
+                            </div>
+                        </div>
+                        <div class="c-c-r fr">互联网架构师</div>
+                    </div>
+                    <div class="c-r fl">
+                        <p>产品运营</p>
+                        <div class="ellipses">产品运营专员</div>
+                        <p>市场营销</p>
+                        <div class="ellipsed">市场营销经理</div>
+                    </div>
+                </div>
+                <div class="b">
+                    <div>I&nbsp;T&nbsp;项&nbsp;目&nbsp;经&nbsp;理</div>
+                </div>
+            </div>
+            <div class="top-teachermess" id="top-teachermess">
+                <!--部分专家介绍-->
+                <h2>部分专家介绍</h2>
+                <div class="teacher" id="teacher">
+                    <div class="sanjiao" id="sanjiao">
+                        <span class="left" id="left"><</span>
+                        <span class="right" id="right">></span>
+                    </div>
+                    <ul>
+                        <li>
+                            <div class="timg1 iimg" id="tiimg1"><img src="images/teacher1.jpg"/></div>
+                            <h3>王程远</h3>
+                            <h4>阿里巴巴资深产品经理</h4>
+                            <p>
+                                阿里巴巴资深产品经理，现任淘宝-闲鱼产品经理，是淘宝鱼雨产品的核心设计者之一，探索C2C
+                                市场交易效率和交易社区。曾任淘宝规则产品经理，负责设计和优 化规则相关产品；淘宝共享业务
+                            </p>
+                        </li>
+                        <li>
+                            <div class="timg2 iimg" id="tiimg2"><img src="images/teacher2.jpg"/></div>
+                            <h3>李建忠</h3>
+                            <h4>Boolan创始人，知名技术专家</h4>
+                            <p>
+                                国内知名技术专家，技术未来主义者。 对面向对象语言与机制有深入研究，精于设计模式、产品创新。连续创业者，曾创办祝成科技，SlideIdea。曾主讲网络课程《设计模式纵横谈》影响广泛。
+                            </p>
+                        </li>
+                        <li>
+                            <div class="timg3 iimg" id="tiimg3"><img src="images/teacher3.jpg"/></div>
+                            <h3>翁恺</h3>
+                            <h4>教师</h4>
+                            <p>
+                                计算机博士，浙江大学计算机学院教师，ACM-ICPC优秀教练奖得主，2011世界总决赛金牌教练。主要讲授包括C、C++、Java程序设计，程序设计语言原理，计算机体系结构，嵌入式系统等课程。
+                            </p>
+                        </li>
+                        <li>
+                            <div class="timg4 iimg" id="tiimg4"><img src="images/teacher4.jpg"/></div>
+                            <h3>王程远</h3>
+                            <h4>阿里巴巴资深产品经理</h4>
+                            <p>
+                                阿里巴巴资深产品经理，现任淘宝-闲鱼产品经理，是淘宝鱼雨产品的核心设计者之一，探索C2C
+                                市场交易效率和交易社区。曾任淘宝规则产品经理，负责设计和优 化规则相关产品；淘宝共享业务
+                            </p>
+                        </li>
+                        <li>
+                            <div class="timg5 iimg" id="tiimg5"><img src="images/teacher5.jpg"/></div>
+                            <h3>李建忠</h3>
+                            <h4>Boolan创始人，知名技术专家</h4>
+                            <p>
+                                国内知名技术专家，技术未来主义者。 对面向对象语言与机制有深入研究，精于设计模式、产品创新。连续创业者，曾创办祝成科技，SlideIdea。曾主讲网络课程《设计模式纵横谈》影响广泛。
+                            </p>
+                        </li>
+                        <li>
+                            <div class="timg6 iimg" id="tiimg6"><img src="images/teacher6.jpg"/></div>
+                            <h3>翁恺</h3>
+                            <h4>教师</h4>
+                            <p>
+                                计算机博士，浙江大学计算机学院教师，ACM-ICPC优秀教练奖得主，2011世界总决赛金牌教练。主要讲授包括C、C++、Java程序设计，程序设计语言原理，计算机体系结构，嵌入式系统等课程。
+                            </p>
+                        </li>
+                        <li>
+                            <div class="timg1 iimg" id="timg1"><img src="images/teacher1.jpg"/></div>
+                            <h3>王程远</h3>
+                            <h4>阿里巴巴资深产品经理</h4>
+                            <p>
+                                阿里巴巴资深产品经理，现任淘宝-闲鱼产品经理，是淘宝鱼雨产品的核心设计者之一，探索C2C
+                                市场交易效率和交易社区。曾任淘宝规则产品经理，负责设计和优 化规则相关产品；淘宝共享业务
+                            </p>
+                        </li>
+                        <li>
+                            <div class="timg2 iimg" id="timg2"><img src="images/teacher2.jpg"/></div>
+                            <h3>李建忠</h3>
+                            <h4>Boolan创始人，知名技术专家</h4>
+                            <p>
+                                国内知名技术专家，技术未来主义者。 对面向对象语言与机制有深入研究，精于设计模式、产品创新。连续创业者，曾创办祝成科技，SlideIdea。曾主讲网络课程《设计模式纵横谈》影响广泛。
+                            </p>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+        <!--teacher  E-->
+    <div class="footer clearfix">
+        <div class="w">
+            <div class="ft-left">
+                <div class="ft-logo"></div>
+                <p>网易公司(163.com)旗下实用技能学习平台。与顶级机构、院校和优秀讲师合作，为您提供海量优质课程，以及创新的在线学习体验，帮助您获得全新的个人发展和能力提升。</p>
+                <div class="share">
+                    <p>关注我们：</p>
+                    <a href="#" class="sharelink1"></a>
+                    <a href="#" class="sharelink2"></a>
+                    <a href="#" class="sharelink3"></a>
+                    <a href="#" class="sharelink4"></a>
+                </div>
+                <div class="copy">©1997-2016 网易公司 版权所有</div>
+            </div>
+            <div class="ft-right">
+                <a href="#">关于我们</a>
+                <a href="#">联系我们</a>
+                <a href="#">帮助中心</a>
+                <a href="#">内容招募</a>
+                <a href="#">意见反馈</a>
+                <a href="#">企业服务</a>
+                <a href="#">中国大学MOOC</a>
+                <div class="appdown">
+                    <span>移动App:</span>
+                    <a href="#" class="appstore"></a>
+                    <a href="#" class="android"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    </body>
+    </html>

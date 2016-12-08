@@ -1,0 +1,637 @@
+/* CSS初始化 */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+    padding: 0;
+    margin: 0;
+}
+
+ul, li {
+    list-style: none;
+}
+
+/* 全部课程 add by liu.ou 2016-8-8 start */
+/*.fl {*/
+    /*float: left;*/
+/*}*/
+
+/*.fr {*/
+    /*float: right;*/
+/*}*/
+
+/*.clearfix:before, .clearfix:after {*/
+    /*content: "";*/
+    /*display: table;*/
+/*}*/
+
+/*.clearfix:after {*/
+    /*clear: both;*/
+/*}*/
+
+/*.clearfix {*/
+    /**zoom: 1; /!*IE/7/6*!/*/
+/*}*/
+
+.courses {
+    width: 1205px;
+    margin: 60px auto;
+    /*margin: 0 auto;*/
+    font-family: "Arial", "Hiragino Sans GB", \5fae\8f6f\96c5\9ed1, "Helvetica", "sans-serif";
+}
+
+.courses a {
+    text-decoration: none;
+    color: #333;
+}
+
+.courses-menu {
+    /*margin-top: 30px;*/
+    border: 1px solid #ddd;
+    margin-left: -1px;
+    font-size: 16px;
+}
+
+.ul-lv1 {
+    padding: 17px 0 17px 20px;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ddd;
+}
+
+.ul-lv1 li {
+    line-height: 22px;
+    display: inline-block;
+    margin-right: 28px;
+    color: #333;
+    position: relative;
+}
+
+.ul-lv1 li .arrow {
+    display: none;
+    position: absolute;
+    left: 50%;
+    bottom: -17px;
+    margin: 0 0 0 -0.5em;
+}
+
+.ul-lv1 li .arrow .arrow_wrap {
+    position: absolute;
+    top: -14px;
+    left: 0;
+    line-height: 0;
+}
+
+.ul-lv1 li .arrow .arrow-wrap-trsp i, .ul-lv1 li .arrow .arrow-wrap-trsp em {
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+}
+
+.ul-lv1 li .arrow .arrow_wrap i, .ul-lv1 li .arrow .arrow_wrap em {
+    display: inline-block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-width: 7px;
+    border-style: solid;
+    font-size: 0;
+    line-height: 0;
+}
+
+.arrow-border {
+    border-color: #ddd;
+}
+
+.arrow-cnt {
+    border-color: #fff;
+    margin-top: 1px;
+}
+
+.ul-lv1 a {
+    color: #333;
+}
+
+.ul-lv1 a:hover {
+    color: #10ae58;
+}
+
+.ul-lv1 a.ul-lv1-select {
+    color: #10ae58;
+}
+
+.ul-lv2 {
+    display: none;
+    padding: 17px 20px;
+}
+
+.ul-lv2 li {
+    font-size: 14px;
+    line-height: 22px;
+    display: inline-block;
+    margin-right: 8px;
+    padding: 0 5px;
+    color: #333;
+}
+
+.ul-lv2 a {
+    color: #959595;
+}
+
+.courses-lv1-all, .courses-lv2-all {
+    background-color: #39a030;
+    border-radius: 2px;
+}
+
+.courses-menu .courses-lv1-all a, .courses-menu .courses-lv2-all a {
+    color: #fff;
+}
+
+.courses-space {
+    height: 20px;
+    border: 1px solid #000;
+}
+
+.courses-l {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.courses-l-cont {
+    margin-right: 260px;
+}
+
+.courses-slide {
+    height: 200px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.courses-slide-pg {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+}
+
+.courses-slide ul {
+    height: 6px;
+    position: relative;
+    display: inline-block;
+}
+
+.courses-slide ul li {
+    width: 12px;
+    height: 6px;
+    background: rgba(0, 0, 0, 0.3);
+    margin-right: 8px;
+    float: left;
+    text-indent: 100px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.courses-slide ul .current {
+    cursor: default;
+    background: #00a650;
+}
+
+.courses-box-topbar {
+    margin-bottom: 20px;
+}
+
+.box-topbar-l {
+    border-left: 1px solid #ddd
+}
+
+.courses-box .courses-box-topbar .box-topbar-l .selected {
+    cursor: default;
+    background: #10ae58;
+    color: #fff;
+    box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.box-topbar-l a {
+    width: 80px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 13px;
+    border: 1px solid #ddd;
+    border-left: none;
+    margin: 0;
+    float: left;
+    cursor: pointer;
+}
+
+.box-topbar-l a:hover {
+    color: #39a030;
+}
+
+.box-topbar-r {
+    line-height: 22px;
+    font-size: 13px;
+}
+
+.box-topbar-r a:hover {
+    color: #39a030;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.courses-box .box-topbar-r .selected {
+    cursor: default;
+    color: #10ae58;
+}
+
+.box-topbar-r .sep {
+    margin: 0 5px;
+}
+
+.box-topbar-r .box-price {
+    width: 40px;
+    height: 22px;
+    padding: 0;
+    border: none;
+    position: relative;
+}
+
+.box-topbar-r-price {
+    cursor: pointer;
+    color: #333;
+    font-size: 13px;
+    line-height: 22px;
+    background: url(../images/createplan.png) 241px -192px no-repeat;;
+    background-position: 29px -198px;
+}
+
+.price-down {
+    display: none;
+    position: absolute;
+    top: 22px;
+    left: -30px;
+    width: 105px;
+    max-height: 450px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index: 1000;
+    border: 1px solid #d1d2d4;
+}
+
+.price-list {
+    height: 33px;
+    line-height: 33px;
+    font-size: 14px;
+    color: #333;
+    padding: 0 10px;
+    width: 257px;
+    cursor: pointer;
+    /*overflow: hidden;*/
+}
+
+.price-list:hover {
+    background-color: #ececee;
+}
+
+.node-list {
+    position: relative;
+    margin-left: -15px;
+    /*margin-bottom: -30px;*/
+}
+
+.node-list .node-item {
+    width: 225px;
+    height: 225px;
+    position: relative;
+    float: left;
+    margin: 0 0 30px 15px;
+    background-color: #fff;
+}
+
+.node-list .node-item:hover {
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.wrap .img {
+    padding: 1px 1px 0;
+    height: 124px;
+    width: 223px;
+    position: relative;
+}
+
+.wrap .img .pic {
+    position: relative;
+    overflow: hidden;
+    height: 124px;
+    width: 100%;
+}
+
+.tit {
+    color: #333;
+    padding: 0 5px;
+    position: relative;
+    margin-top: 5px;
+    height: 1.4em;
+}
+
+.tit h3 {
+    line-height: 1.4;
+    font-size: 14px;
+    font-weight: normal;
+    color: #333;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.tit .sign {
+    padding: 0 4px;
+    height: 20px;
+    position: absolute;
+    top: -29px;
+    right: 2px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    line-height: 20px;
+    text-align: center;
+    font-size: 12px;
+    z-index: 10;
+}
+
+.orgName {
+    display: block;
+    padding: 0 5px;
+    line-height: 20px;
+    height: 23px;
+    color: #999;
+    font-family: 'microsoft yahei';
+    font-size: 12px;
+}
+
+.desc {
+    height: 18px;
+    line-height: 18px;
+    padding: 0 5px;
+}
+
+.desc .hot {
+    float: left;
+    padding: 0 6px 0 20px;
+    color: #999;
+    font-size: 12px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    background: url(../images/ui_sprite.png) no-repeat 4449px 4449px;
+    background-position: -55px -350px;
+}
+
+.btn-pr {
+    width: 210px;
+    position: absolute;
+    bottom: 5px;
+    left: 7px;
+    line-height: 21px;
+    font-size: 12px;
+}
+
+.btn-pr-normal {
+    color: #ff4000;
+}
+
+.img-label {
+    background: url(../images/courseMark_sprite.png) no-repeat -63px -80px;
+    position: absolute;
+    top: -1px;
+    left: -2px;
+    z-index: 10;
+    width: 51px;
+    height: 51px;
+}
+
+.node-pager {
+    padding: 30px 10px;
+    margin-bottom: -30px;
+    font-size: 12px;
+    line-height: 160%;
+    float: right;
+}
+
+.node-pager div {
+    line-height: 20px;
+}
+
+.node-pager span {
+    float: left;
+}
+
+.node-pager a {
+    float: left;
+    margin: 0 4px;
+    border: none;
+    padding: 0;
+}
+
+.zbtn {
+    width: 30px;
+    height: 20px;
+    text-indent: -9999px;
+    overflow: hidden;
+    background-color: #9fd7b2;
+
+}
+
+.node-pager .prev {
+    background-image: url(../images/ui_sprite.png);
+    background-repeat: no-repeat;
+    background-position: -44px -431px;
+}
+
+.node-pager .next {
+    background-image: url(../images/ui_sprite.png);
+    background-repeat: no-repeat;
+    background-position: -42px -461px;
+}
+
+.node-pager-disabled {
+    background-color: #ddd;
+    cursor: default;
+}
+
+.zpgi {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    color: #999;
+}
+
+.zpgi:hover {
+    background: #9fd7b2;
+    color: #fff;
+}
+
+.node-pager div .zpgi-current {
+    font-weight: bolder;
+    color: #10ae58;
+    background: none;
+    cursor: default;
+}
+
+.courses-r {
+    position: relative;
+    float: right;
+    width: 225px;
+    margin-left: -225px;
+}
+
+.livebox {
+    margin-top: 20px;
+}
+
+.toptit {
+    font-size: 17px;
+    line-height: 1;
+    padding: 20px 0;
+    color: #333;
+}
+
+.livebox-cont {
+    background: #f9f9f9;
+    padding: 10px;
+
+}
+
+.livebox-cont a {
+    display: block;
+    padding: 10px 0;
+    font-size: 13px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.livebox-cont a:hover {
+    color: #10ae58;
+}
+
+.livebox-cont a:hover span.icn {
+    background: url(../images/ui_sprite.png) no-repeat -1px -1690px;
+}
+
+.livebox-cont a:hover span {
+    color: #10ae58;
+}
+
+.livingicn {
+    display: inline-block;
+    width: 28px;
+    height: 16px;
+    vertical-align: -1px;
+    margin-left: 2px;
+    background: url(../images/ui.png) no-repeat 0 -84px;
+}
+
+.livebox-cont span {
+    display: inline-block;
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    font-size: 13px;
+    color: #666;
+}
+
+.icn {
+    width: 18px;
+    margin-left: 3px;
+    background: url(../images/ui_sprite.png) no-repeat -1px -1673px;
+}
+
+.toptit span {
+    margin:0 5px;
+    color:#ddd;
+}
+
+.toptit a.selected {
+    color: #39a030;
+    text-decoration: none;
+}
+
+.toptit a.no-selected:hover {
+    color: #39a030;
+    cursor: pointer;
+}
+
+.rankItm {
+    padding: 8px 0;
+    line-height: 17px;
+}
+
+.rankItm .num {
+    font-size: 17px;
+    color: #999;
+    font-style: italic;
+    width: 30px;
+    float: left;
+}
+
+.rankItm a {
+    display: block;
+    font-size: 13px;
+    max-width: 175px;
+    float: left;
+    padding: 0;
+}
+
+.rankItm .num1 {
+    color: #ff4000;
+}
+
+.u-lecorgItm {
+    padding: 10px;
+}
+
+.u-lecorgItm .cnt {
+    margin-left: 50px;
+}
+
+.u-lecorgItm .u-lecorgItm-name {
+    font-size: 17px;
+    line-height: 20px;
+    max-width: 118px;
+    padding: 0;
+
+}
+
+.u-lecorgItm .u-lecorgItm-img {
+    padding: 0;
+}
+
+.u-lecorgItm-org {
+    margin-top: 3px;
+    width: 16px;
+    height: 14px;
+    background: url(../images/vipIcons.png) no-repeat 0 0;
+}
+
+.u-lecorgItm-lector {
+    margin-top: 3px;
+    width: 16px;
+    height: 14px;
+    background: url(../images/vipIcons.png) no-repeat -28px 0;
+}
+
+.cnt .top {
+    height: 24px;
+}
+
+.cnt .fans {
+    font-size: 13px;
+    color: #999;
+}
+
+.u-lecorgItm a {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.livebox-ad {
+    display: block;
+    margin-top: 40px;
+}
+/* 全部课程 add by liu.ou 2016-8-8 end */

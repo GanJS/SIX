@@ -1,0 +1,453 @@
+ <html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="base.css"/>
+    <link rel="stylesheet" href="index.css"/>
+
+    <link rel="shortcut icon" href="images/favicon.ico"/>
+    <script src="jquery-1.11.1.min.js"></script>
+</head>
+<body>
+<div id="gs"><img src="images/xz5.jpeg" alt=""/></div>
+<script>
+    var gs = document.getElementById("gs")
+    var img = gs.children[0];
+    var timer = null, targetx = 0, leaderx = 0, targety = 0, leadery = 0;
+    document.onmouseover = function (event) {
+        event = event || window.event;
+        var pagex = event.pageX || event.clientX + scroll().left;
+        var pagey = event.pageY || event.clientY + scroll().top;
+        clearInterval(timer);
+        timer = setInterval(function () {
+            leaderx = img.offsetLeft;
+            targetx = pagex
+//            targetx = pagex-img.offsetWidth/2;
+            var stepx = (targetx - leaderx) / 10;
+            stepx = stepx > 0 ? Math.ceil(stepx) : Math.floor(stepx);
+            leaderx = leaderx + stepx;
+            img.style.left = leaderx + "px";
+            leadery = img.offsetTop;
+            targety = pagey
+//            targety = pagey-img.offsetHeight/3;
+            var stepy = (targety - leadery) / 10;
+            stepy = stepy > 0 ? Math.ceil(stepy) : Math.floor(stepy);
+            leadery = leadery + stepy;
+            img.style.top = leadery + "px";
+            if (targetx === leaderx && targety === leadery) {
+                clearInterval(timer);
+            }
+        }, 20);
+    }
+</script>
+<!--header start-->
+<div class="loading">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
+<div class="header">
+    <div class="w">
+        <div class="logo fl">
+            <a target=_blank href="../00-网易云主页/main.html"></a><img src="images/logo3.png" alt=""/>
+        </div>
+        <div class="title fl">
+            <ul id="diji">
+                <li><a target=_blank href="../00-网易云主页/main.html">首页</a></li>
+                <li><a target=_blank href="../01-全部课程/all-course.html">全部课程</a></li>
+                <li><a target=_blank href="../04-微专业/index.html">微专业</a></li>
+                <li><a target=_blank href="#">下载App</a></li>
+                <li><a target=_blank href="#">我的学习</a></li>
+            </ul>
+        </div>
+        <div class="ipt fr">
+            <input type="text" value="搜索"/>
+            <button>登录/注册</button>
+        </div>
+    </div>
+</div>
+<div class="ewm">
+    <img id="ewm" src="images/ewm.png" alt=""/>
+</div>
+<script src="jquery-1.11.1.min.js"></script>
+<script>
+    $(function () {
+        $("#diji").children("li").eq(3).mouseover(function () {
+            $("#ewm").stop(false,true).show(500);
+        })
+        $("#diji").children("li").eq(3).mouseout(function () {
+            $("#ewm").stop(false,true).hide(500);
+        })
+    })
+</script>
+<!--header end-->
+
+<!--headerbanner start -->
+<div class="headerbanner">
+    <div class="img w">
+        <div class="tb"></div>
+        <div class="center fl">
+            <dl class="top3 fl">
+                <dt id="top1">金融学基础理论</dt>
+                <dd class="liang">基础理论</dd>
+            </dl>
+            <dl class="fl">
+                <dt id="top2">个人金融与财富管理</dt>
+                <dd class="top1 liang1">金融投资工具</dd>
+                <dd class="liang1">财富管理实务</dd>
+            </dl>
+            <dl class="fl">
+                <dt id="top3">个人金融与财富管理</dt>
+                <dd class="top1 liang2">企业理财基础</dd>
+                <dd class="top2 liang2">企业金融筹划</dd>
+                <dd class="top2 liang2">企业投资筹划</dd>
+            </dl>
+            <dl class="fl">
+                <dt id="top4">创业金融</dt>
+                <dd class="top1 liang3">创业团队组</dd>
+                <dd class="top2 liang3">企业战略管理</dd>
+                <dd class="top2 liang3">创业企业法</dd>
+                <dd class="top2 liang3">企业模式与</dd>
+            </dl>
+            <dl class="fl">
+                <dt id="top5">互联网时代新金融</dt>
+                <dd class="top1 liang4">互联网金融</dd>
+                <dd class="top2 liang4">互联网金融</dd>
+                <dd class="top2 liang4">新三板挂牌</dd>
+                <dd class="top2 liang4">利率市场化</dd>
+                <dd class="top2 liang4">互联网时代</dd>
+            </dl>
+        </div>
+    </div>
+</div>
+<script>
+    $(function () {
+        $("#top1").mouseover(function () {
+            $(".liang").fadeIn(2000).css({"background-color": "pink"})
+        })
+        $("#top1").mouseout(function () {
+            $(".liang").fadeIn(2000).css({"background-color": ""})
+        })
+
+
+        $("#top2").mouseover(function () {
+            $(".liang1").fadeIn(2000).css({"background-color": "pink"})
+        })
+        $("#top2").mouseout(function () {
+            $(".liang1").fadeIn(2000).css({"background-color": ""})
+        })
+
+
+        $("#top3").mouseover(function () {
+            $(".liang2").fadeIn(2000).css({"background-color": "pink"})
+        })
+        $("#top3").mouseout(function () {
+            $(".liang2").fadeIn(2000).css({"background-color": ""})
+        })
+
+
+        $("#top4").mouseover(function () {
+            $(".liang3").fadeIn(2000).css({"background-color": "pink"})
+        })
+        $("#top4").mouseout(function () {
+            $(".liang3").fadeIn(2000).css({"background-color": ""})
+        })
+
+
+        $("#top5").mouseover(function () {
+            $(".liang4").fadeIn(2000).css({"background-color": "pink"})
+        })
+        $("#top5").mouseout(function () {
+            $(".liang4").fadeIn(2000).css({"background-color": ""})
+        })
+
+
+    })
+</script>
+<!--headerbanner end -->
+<!--main start -->
+<div class="main" id="main">
+    <div class="w">
+        <div class="center1">
+            <h3>强大的师资团队</h3>
+        </div>
+        <div class="boguo">
+            <div class="chang" id="chang">
+                <ul id="imgs">
+                    <li class="line"><img src="images/rw1.gif" alt=""/>
+
+                        <h3>汤和松</h3>
+                    </li>
+                    <p>这是曾是百度公司的副总裁</p>
+                    <li><img src="images/rw2.gif" alt=""/>
+
+                        <h3>潘福祥</h3>
+                    </li>
+                    <i>清华大学的学士</i>
+                    <li><img src="images/rw3.gif" alt=""/>
+
+                        <h3>吴荣辉</h3>
+                    </li>
+                    <s>中国英特网的地区总监</s>
+                    <li class="line"><img src="images/rw1.gif" alt=""/>
+
+                        <h3>汤和松 </h3>
+                    </li>
+                    <li><img src="images/rw3.gif" alt=""/>
+
+                        <h3>吴荣辉</h3>
+                    </li>
+                    <li><img src="images/rw2.gif" alt=""/>
+
+                        <h3>潘福祥</h3>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="jt" id="arr">
+            <span class="left fl" id="left"></span>
+            <span class="right fr" id="right"></span>
+        </div>
+    </div>
+</div>
+<script>
+    var left = document.getElementById("left");
+    var right = document.getElementById("right");
+    var chang = document.getElementById("chang");
+    var imgs = document.getElementById("imgs");
+    //        var imgs1 = document.getElementById("imgs1");
+    var boguo = document.getElementsByClassName("boguo")[0];
+    var imgWidth = chang.offsetWidth;
+    //        console.log(imgWidth)
+    var main = document.getElementById("main");
+    var arr = document.getElementById("arr");
+    //	console.log(left);
+    //	console.log(right);
+    //	console.log(imgs);
+    //	console.log(ad);
+
+    //鼠标放上去显示，移开隐藏
+    main.onmouseover = function () {
+        arr.style.display = "block"
+    }
+    main.onmouseout = function () {
+        arr.style.display = "none";
+    }
+
+    var num = 0;
+    //2.为两个按钮绑定事件
+    right.onclick = function () {
+//            alert(1)
+        //3.移动ul。
+        //1.利用计数器
+        num++;
+        if (num > 1) {
+            num = 1;
+        }
+        //2.点到头左边的跳转到最后一张。
+        animate(-imgWidth * num, imgs);
+        //3.点到头右边的不能点
+    }
+
+    left.onclick = function () {
+//            alert(1)
+        //3.移动ul。
+        //1.利用计数器
+        num--;
+        if (num < 0) {
+            num = 1;
+        }
+        //2.点到头左边的跳转到最后一张。
+        animate(-imgWidth * num, imgs);
+        //3.点到头右边的不能点
+    }
+    //匀速框架
+    function animate(target, obj) {
+        clearInterval(obj.timer);
+        var speed = target - obj.offsetLeft > 0 ? 10 : -10;
+        obj.timer = setInterval(function () {
+            obj.style.left = obj.offsetLeft + speed + "px";
+            if (Math.abs(target - obj.offsetLeft) <= Math.abs(speed)) {
+                obj.style.left = target + "px";
+                clearInterval(obj.timer);
+            }
+        }, 10);
+    }
+</script>
+<!--main end -->
+<!--summary start -->
+<div class="summary">
+    <div class="bottom-top">
+        <div id="one-1-1">
+            <h3>金融行业直播学习会</h3>
+        </div>
+        <div id="one-1-2">
+            <h3>P2P模式的未来</h3>
+        </div>
+        <div id="one-1-3">
+            <h3>新三板挂牌法律实物</h3>
+        </div>
+        <div id="one-1-4">
+            <h3>股票投资</h3>
+        </div>
+    </div>
+    <div class="summary-top w">
+        <div class="center2">
+            <h3>你收获，的不仅仅是课程</h3>
+        </div>
+        <div class="shop">
+            <ul>
+                <li><img src="images/ong.png" alt=""/>
+                </li>
+                <i>课程参考资料</i>
+                <li><img src="images/two.png" alt=""/>
+                </li>
+                <span id="dz">线下清华学习课程机会</span>
+                <li><img src="images/there.png" alt=""/>
+                </li>
+                <s>参加免费金融大牛直播活动</s>
+            </ul>
+        </div>
+    </div>
+</div>
+<script>
+    $(function () {
+        $(".shop").children("ul").mouseover(function () {
+            $("i").slideDown(1000);
+            $("#dz").slideDown(1000);
+            $("s").slideDown(1000);
+        })
+        $(".shop").children("ul").mouseout(function () {
+            $("i").slideUp(1000);
+            $("#dz").slideUp(1000);
+            $("s").slideUp(1000);
+        })
+    })
+</script>
+<!--summary end -->
+<!--smg start-->
+<div class="smg">
+    <div class="smg-top w">
+        <div class="center3">
+            <h3>热门课程推荐</h3>
+        </div>
+        <div class="smg-bottom">
+            <ul>
+                <li id="one"><img id="one1-1" src="images/111.png" alt=""/>
+
+                    <h3>金融行业直播学习会</h3>
+                </li>
+                <li id=two"><img id="one1-2" src="images/222.png" alt=""/>
+
+                    <h3>P2P模式的未来</h3></li>
+                <li id="there"><img id="one1-3" src="images/333.png" alt=""/>
+
+                    <h3>新三板挂牌法律实物</h3></li>
+                <li id="four"><img id="one1-4" src="images/444.png" alt=""/>
+
+                    <h3>股票投资</h3></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script>
+    $(function () {
+        $("#one1-1").mouseover(function () {
+            $("#one-1-1").stop(false, true).slideDown(2000);
+        })
+        $("#one1-1").mouseout(function () {
+            $("#one-1-1").stop(false, true).hide(2000);
+        })
+        $("#one1-2").mouseover(function () {
+            $("#one-1-2").stop(false, true).slideDown(2000);
+        })
+        $("#one1-2").mouseout(function () {
+            $("#one-1-2").stop(false, true).hide(2000);
+        })
+        $("#one1-3").mouseover(function () {
+            $("#one-1-3").stop(false, true).slideDown(2000);
+        })
+        $("#one1-3").mouseout(function () {
+            $("#one-1-3").stop(false, true).hide(2000);
+        })
+        $("#one1-4").mouseover(function () {
+            $("#one-1-4").stop(false, true).slideDown(2000);
+        })
+        $("#one1-4").mouseout(function () {
+            $("#one-1-4").hide(2000).stop(false, true);
+        })
+    })
+
+</script>
+<!--smg end-->
+<div class="flootr-botton">
+    <div class="flootr-botton1">
+        <div class="flootr-botton2">
+            <h3>课程合作机构</h3>
+            <img src="images/123.png" alt=""/>
+
+            <h2>清华大学五道口金融学院旗下在线教育平台</h2>
+            <span>国际化金融视野，高水平师资阵容，前瞻性金融实践</span>
+        </div>
+    </div>
+</div>
+<div class="floor">
+</div>
+<img id="shang" src="images/shang.jpg"
+     style="display:none;position: fixed;right: 100px;bottom: 100px;cursor: pointer;height: 100px;width: 100px"/>
+<script>
+
+    window.onload = function () {
+        //需求：页面滑动到100px一下，显示小火箭，点击小火箭返回顶部。
+        //技术点：window.scrollTo(x,y);页面跳转到坐标值。。。
+        //步骤：
+        //1.老三步。（显示和隐藏小火箭）
+        //2.绑定图片点击事件
+        //1.以前我们移动的是盒子。（所以以前的滑动缓动封装不能用了）
+        //2.要结合缓动公司与页面跳转书写缓动的页面的跳转。
+
+        //1.老三步。（显示和隐藏小火箭）
+        var shang = document.getElementById("shang");
+        //定义三个变量：定时器，目标位置，屏幕的当前位置。
+        var timer = null, target = 0, leader = 0;
+
+        window.onscroll = function () {
+            //判断，如果被卷去的头部大于200px，那么显示小火箭，否则隐藏。
+            if (scroll().top >= 200) {
+                shang.style.display = "block";
+            } else {
+                shang.style.display = "none";
+            }
+            //当屏幕滑动的时候为leader赋值(定义一个计数器，记录被卷去的头部，而这个值刚刚好等于Y坐标！)
+            leader = scroll().top;
+        }
+
+        //2.绑定图片点击事件
+        //1.以前我们移动的是盒子。（所以以前的滑动缓动封装不能用了）
+        //2.要结合缓动公司与页面跳转书写缓动的页面的跳转。
+        shang.onclick = function () {
+            //利用定时器，完成类似盒子缓动的效果，来做屏幕跳转。
+            clearInterval(timer);
+            timer = setInterval(function () {
+                var step = (target - leader) / 10;
+                step = step > 0 ? Math.ceil(step) : Math.floor(step);
+                leader = leader + step;
+                window.scrollTo(0, leader);
+                if (leader === 0) {
+                    clearInterval(timer);
+                }
+            }, 50);
+        }
+    }
+    function scroll() {
+        return {
+            "top": window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop,
+            "left": document.documentElement.scrollLeft + document.body.scrollLeft
+        };
+    }
+</script>
+
+</body>
+</html>

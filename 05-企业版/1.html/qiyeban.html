@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>网易企业版</title>
+    <link rel="stylesheet" href="../qiyeban.css/qiyebanbase.css"/>
+    <link rel="stylesheet" href="../qiyeban.css/qiyebanindex.css"/>
+    <link rel="shortcut icon" href="../qiyebanimages/favicon.ico"/>
+</head>
+<body>
+<img src="../qiyebanimages/Top.jpg" style="display:none;position: fixed;right: 100px;bottom: 100px;cursor: pointer;z-index:5;"/>
+<div class="box1">
+    <div class="box2">×</div>
+</div>
+<div class="all">
+
+    <div class="top clearfix">
+        <div class="top-left"></div>
+        <div class="top-left-qiye">企业版</div>
+        <div class="top-right fr">联系电话:0971-89852362</div>
+        <div class="top-right-show">0971-89852362</div>
+    </div>
+</div>
+<div class="free">
+    <div class="free-easy" >轻松创办新兴企业大学</div>
+    <div class="free-cost">网易云课堂提供的企业服务,效率高,成本低,<br/><br/>
+        帮您的企业快速搭建员工的在线学习平台,节约运维成本,强化员工的学习效率</div>
+    <a id="free-a">免费试用</a>
+</div>
+<div class="allthree">
+    <div class="w ">
+        <div class="hui">
+            <div class="safe fl">
+                <div class="picture picture1"></div>
+                <div class="self">安全的企业私有空间</div>
+                <div class="close">封闭式的企业私有学习平台,<br/> 保障企业私有知识及员工信息 <br/>的安全不泄露 </div>
+            </div>
+            <div class="safe fl safe2">
+                <div class=" picture2"></div>
+                <div class="self2">安全的企业私有空间</div>
+                <div class="close2">封闭式的企业私有学习平台,<br/> 保障企业私有知识及员工信息 <br/>的安全不泄露 </div>
+            </div>
+            <div class="safe fl safe3">
+                <div class="picture picture3"></div>
+                <div class="self3">丰富的在线精品课程</div>
+                <div class="close3">提供超过3000门.来自各领域<br/> 专业的职场在线精品课程,内 <br/>容质量有保证 </div>
+            </div>
+            <div class="safe fl safe4">
+                <div class="picture picture4"></div>
+                <div class="self4">灵活的教学配置</div>
+                <div class="close4">支持不同课件类型、讨论区、<br/> 测评、多维度统计等多种教学 <br/>工具,提高教学效率 </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="alljx">
+    <div class="alljx-top">便捷的多端同步</div>
+    <div class="alljx-next">多端的数据同步,保证员工的可 <br/> 以在任何时间、任何地点、任 <br/>何设备上进行学习 </div>
+</div>
+<div class="w allpicture clearfix">
+    <div class="leader leader1 fl "></div>
+    <div class="leader leader2 fl"></div>
+    <div class="sell"></div>
+    <div class="zhan zhan-f"></div>
+    <div class="leader renli"></div>
+    <div class="leader caiwu"></div>
+    <div class="leader yunying fl"></div>
+    <div class="leader goutong fl"></div>
+    <div class="zhuanye fl"></div>
+</div>
+<div class="tong">
+    <div class="w clearfix">
+        <div class="him">他们选择了我们的企业大学</div>
+        <div class="tong-p tong-p1 tong-margin"></div>
+        <div class="tong-p tong-p2 tong-margin"></div>
+        <div class="tong-p tong-p3 tong-margin"></div>
+        <div class="tong-p tong-p4"></div>
+    </div>
+    <div class="w">
+        <div class="w-jishu w-jishu1"></div>
+        <div class="w-jishu w-jishu2"></div>
+        <div class="w-jishu w-jishu3"></div>
+        <div class="w-jishu w-jishu4"></div>
+        <div class="w-jishu w-jishu5"></div>
+        <div class="w-jishu w-jishu6"></div>
+    </div>
+</div>
+<div class="foot">
+    <div class="foot-foot">
+        <div class="foot-begin">开始创办您的专属企业大学</div>
+        <a class="foot-a">免费试用</a>
+        <div class="w foot-company">网易公司(163.com)旗下技能学习平台。<br/>
+        与顶级机构、院校、和优秀讲师合作，为您提供经海量 优质课程，以及创新的在线学习体验，帮助您获得全新的个人发展和能力提升。
+        </div>
+        <div class="foot-copyright">©1997-2016 网易公司 版权所有</div>
+    </div>
+</div>
+<script src="../qiyeban.js/jquery-1.11.1.min.js"></script>
+<script src="../qiyeban.js/JQuery1.0.0.1.js"></script>
+<script>
+    var box1=document.getElementsByClassName("box1")[0]
+    window.onscroll = function () {
+        if (scroll().top >= 200) {
+            box1.style.display = "block";
+        }
+    }
+</script>
+<script>
+    var img = document.getElementsByTagName("img")[0];
+var timer = null,target = 0,leader = 0;
+window.onscroll = function () {
+    if(scroll().top >= 200){
+        img.style.display = "block";
+    }else{
+        img.style.display = "none";
+    }
+    leader = scroll().top;
+}
+img.onclick = function () {
+    clearInterval(timer);
+    timer = setInterval(function () {
+        var step = (target - leader) / 10;
+        step = step > 0 ? Math.ceil(step) : Math.floor(step);
+        leader = leader + step;
+        window.scrollTo(0, leader);
+        if (leader === 0) {
+            clearInterval(timer);
+        }
+    }, 50);
+}
+
+</script>
+<script>
+    $(function(){
+        $(".top .top-left").mouseenter(function(){
+            $(".top .top-left").css("opacity",0.6)
+        })
+        $(".top .top-left").mouseleave(function(){
+            $(".top .top-left").css("opacity",1)
+        })
+
+       $(".top-right").mouseenter(function(){
+           $(".top-right-show").css("opacity",0.6)
+       })
+        $(".top-right").mouseleave(function(){
+            $(".top-right-show").css("opacity",0)
+        })
+
+
+        $(".self").mouseenter(function(){
+            $(".close").show();
+        })
+        $(".self").mouseleave(function(){
+            $(".close").hide()
+        })
+        $(".self2").mouseenter(function(){
+            $(".close2").show();
+        })
+        $(".self2").mouseleave(function(){
+            $(".close2").hide()
+        })
+        $(".self3").mouseenter(function(){
+            $(".close3").show();
+        })
+        $(".self3").mouseleave(function(){
+            $(".close3").hide()
+        })
+        $(".self4").mouseenter(function(){
+            $(".close4").show();
+        })
+        $(".self4").mouseleave(function(){
+            $(".close4").hide()
+        })
+        $(".tong-p1").mouseenter(function(){
+            $(".tong-p1").slideUp(2000).slideDown(2000);
+
+        })
+        $(".tong-p2").mouseenter(function(){
+            $(".tong-p2").slideUp(2000).slideDown(2000);
+
+        })
+        $(".tong-p3").mouseenter(function(){
+            $(".tong-p3").slideUp(2000).slideDown(2000);
+
+        })
+        $(".tong-p4").mouseenter(function(){
+            $(".tong-p4").slideUp(2000).slideDown(2000);
+
+        })
+        $(".allpicture div").mouseenter(function(){
+            $(this).siblings("div").css("opacity",0.6)
+        })
+        $(".allpicture div").mouseleave(function(){
+            $(this).parent().children().css("opacity",1)
+        })
+
+    })
+</script>
+</body>
+</html>

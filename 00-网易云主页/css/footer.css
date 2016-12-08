@@ -1,0 +1,106 @@
+.footer {
+    /*margin-top: 1000px;*/
+    height: 298px;
+    background-color: #474443;
+    border: 1px solid #000;
+}
+.foot-logo {
+    height: 46px;
+    padding-top: 52px;
+}
+.foot-bot-l {
+    float: left;
+    font-family: "microsoft yehei";
+}
+.foot-bot-l .p1{
+    /*line-height: 22px;*/
+    color: #ddd;
+    font:12px/22px "Î¢ÈíÑÅºÚ";
+    padding-top: 16px;
+    padding-bottom: 26px;
+
+}
+
+.foot-bot-l .p2{
+    /*line-height: 22px;*/
+    color: #fff;
+    font:12px/22px "Î¢ÈíÑÅºÚ";
+    padding-top: 16px;
+    position: relative;
+}
+.foot-bot-l .p2 a{
+    display: inline-block;
+    position: absolute;
+    height: 16px;
+    width: 16px;
+}
+.foot-bot-l .p2 .a1 {
+    left:65px;
+    top: 20px;
+    background: url(../images/wb.png) no-repeat -35px -53px ;
+}
+.foot-bot-l .p2 .a2 {
+    left:90px;
+    top: 20px;
+    background: url(../images/wb.png) no-repeat -35px -73px ;
+}
+.foot-bot-l .p2 .a3 {
+    left:115px;
+    top: 20px;
+    background: url(../images/wb.png) no-repeat -8px -73px ;
+}
+.foot-bot-l .p2 .a4 {
+    left:140px;
+    top: 20px;
+    background: url(../images/wb.png) no-repeat -8px -53px ;
+}
+.foot-bot-l .p3{
+
+    color: #84998E;
+    font:12px/22px "Î¢ÈíÑÅºÚ";
+    padding-top: 10px;
+}
+
+.foot-bot-r {
+    float: right;
+}
+
+.foot-bot-r a{
+    display: inline-block;
+    color: #ddd;
+    font:12px/22px "Î¢ÈíÑÅºÚ";
+    padding: 16px 8px;
+}
+.foot-bot-r .apple {
+    position: relative;
+    padding-left: 180px;
+    font: 14px/32px "Î¢ÈíÑÅºÚ";
+    color: #ddd;
+    /*float: right;*/
+}
+.foot-bot-r span {
+    position: absolute;
+    display: inline-block;
+    height: 32px;
+    width: 110px;
+}
+
+.foot-bot-r .s1{
+    right: 10px;
+    top: 0;
+    background:url(../images/apple.png) ;
+}
+.foot-bot-r .s2{
+    right: 130px;
+    top: 0;
+    background:url(../images/apple.png) 0 -42px ;
+}
+.foot-bot img {
+    position: fixed;
+    height: 65px;
+    width: 36px;
+    bottom:50px;
+    right: 100px;
+    cursor: pointer;
+    /*z-index: 1;*/
+}
